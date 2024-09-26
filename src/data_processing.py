@@ -3,7 +3,7 @@ from sklearn.preprocessing import StandardScaler
 
 def load_data(file_path):
     """Load raw data from CSV file."""
-    return pd.read_csv(file_path)
+    return pd.read_csv(file_path, encoding='ISO-8859-1')
 
 def clean_data(df):
     """Handle missing values, remove duplicates, and filter data."""
